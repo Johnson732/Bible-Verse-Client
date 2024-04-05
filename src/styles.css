@@ -1,0 +1,9 @@
+body{
+  background-color: rgb(7, 31, 58);
+  color: rgb(242, 237, 237);
+  font-family: "Cookie", cursive;}
+.cookie-regular {
+  font-family: "Cookie", cursive;
+  font-weight: 400;
+  font-style: normal;
+}

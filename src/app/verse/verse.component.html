@@ -1,0 +1,29 @@
+<!-- <h4>
+  For most certainly I tell you, whoever may tell this mountain, ‘Be taken up
+  and cast into the sea,’ and doesn’t doubt in his heart, but believes that what
+  he says is happening; he shall have whatever he says. Mark 11:23
+</h4> -->
+<div class=" d-flex  flex-column " >
+<div class="card p-4 m-5 mb-3 justify-content-center align-items-center "style="background-color: rgb(19, 23, 22);">
+  <div *ngIf="!bibleData">
+    <h1>
+      For most certainly I tell you, whoever may tell this mountain, ‘Be taken up
+      and cast into the sea,’ and doesn’t doubt in his heart, but believes that what
+      he says is happening; he shall have whatever he says.
+    </h1>
+    <h4 style="color: cornflowerblue;">Mark 11:23</h4>
+  </div>
+
+  <div class="card-body" *ngIf="bibleData">
+
+    <h1>{{ bibleData.text }}</h1>
+    <h4 style="color: cornflowerblue;">{{ bibleData.reference }}</h4>
+  </div>
+  <button type="button" class="btn btn-outline-success fs-4" (click)="newVerse()">Bible says</button>
+</div>
+<div class="align-self-end m-5 mt-0">
+  <h4 style="color: rgb(217, 253, 58);">{{today | date:"MMM dd, yyyy 'at' hh:mm a"}}</h4>
+</div>
+</div>
+
+
